@@ -1,0 +1,2 @@
+# Novus-Hotel
+Automated cycle
