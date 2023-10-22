@@ -81,7 +81,7 @@ with col4:
     manifiesto = st.selectbox('Do you have support manifiesto?', ['Yes', 'No'])
 
 
-h = st.button('Crear Novus Hotel 🛏️ llamado ', name)
+h = st.button('Crear Novus Hotel 🛏️ YA')
 
 if h:
     st.write('¡Novus Hotel en construcción! Accede a los MANDOS y ATENTOS de tu <<', name, '>> con el código de confirmación enviado a <<', email, '>>')
