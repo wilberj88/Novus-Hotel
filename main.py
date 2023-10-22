@@ -70,15 +70,15 @@ with col3:
     )
 
 with col4:
-    name = st.text_input('What is the day price of suits?', '''
+    suit_price = st.text_input('What is the day price of suits?', '''
     ''')
-    email = st.text_input('What is the day price of the rooms?', '''
+    room_price = st.text_input('What is the day price of the rooms?', '''
     ''')
-    bank_account =  st.text_input('What is your rentability goal?', '''
+    rentability_goal =  st.text_input('What is your rentability goal?', '''
     ''')
-    phone =  st.text_input('What is your target?', '''
+    target =  st.text_input('What is your target?', '''
     ''')
-    a = st.selectbox('Do you have support manifiesto?', ['Yes', 'No'])
+    manifiesto = st.selectbox('Do you have support manifiesto?', ['Yes', 'No'])
 
 
 h = st.button('Crear Novus Hotel 🛏️ llamado ', name)
