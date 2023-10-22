@@ -84,6 +84,6 @@ with col4:
 h = st.button('Crear Novus Hotel 🛏️ llamado ', name)
 
 if h:
-    st.write('¡Novus Hotel en construcción! Accede a los MANDOS y ATENTOS de tu <<', name, '>> con el código de confirmación enviado a <<', correo, '>>')
+    st.write('¡Novus Hotel en construcción! Accede a los MANDOS y ATENTOS de tu <<', name, '>> con el código de confirmación enviado a <<', email, '>>')
 
 
