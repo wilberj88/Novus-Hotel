@@ -92,11 +92,43 @@ colored_header(
     color_name="red-70",
 )
 
+#ALARMS CONFIGURATION
+BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
+API_KEY = "146090ad17fa8843bc9eca97c53926b4"
+sity = "New York"
+URL1 = BASE_URL + "q=" + sity + "&appid=" + API_KEY
+response = requests.get(URL1)
+if response.status_code == 200:
+   # getting data in the json format
+   data = response.json()
+   # getting the main dict block
+   main = data['main']
+  # getting temperature
+   temperature = main['temp']
+   # getting the humidity
+   humidity = main['humidity']
+   # getting the pressure
+   pressure = main['pressure']
+   # weather report
+   report = data['weather']
 pytrends = TrendReq(hl='en-US', tz=360)
-st.write("🇺🇸 Top10 Trending Search in last hour")
-# Google Trends data
-df1 = pytrends.trending_searches(pn='united_states')
-st.dataframe(df1.head(10))
+col4, col5, col6 = st.columns(3)
+
+with col4:
+    st.write("🇺🇸 Top10 Trending Search in last hour")
+    # Google Trends data
+    df1 = pytrends.trending_searches(pn='united_states')
+    st.dataframe(df1.head(10))
+
+with col5:
+    st.write(f"{sity:-^30}")
+    st.write(f"Temperature (Kelvins): {temperature}")
+    st.write(f"Humidity: {humidity}")
+    st.write(f"Pressure: {pressure}")
+    st.write(f"Weather Report: {report[0]['description']}")
+
+with col6:
+     metric("Sentimiento", "86%", "4%")
 
 colored_header(
     label="Recommendations",
