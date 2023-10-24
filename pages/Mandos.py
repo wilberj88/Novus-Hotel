@@ -232,21 +232,21 @@ with col8:
     st.write('🌹 Speech to Persuade NOW')
     with st.expander("About Yesterday:"):
         st.subheader('For Womens')
-        st.write('You miss the sun of yesterday as you miss your exboyfriend')
+        st.write('Yesterday the rain could´t stopped you. Today you could everything. Visit Novus Hotel 🛏️')
         st.subheader('For Mens')
-        st.write('You miss the sun of yesterday as you miss your exgirlfriend')
+        st.write('You miss the sun of yesterday as you miss your exgirlfriend. Forget all. Visit Novus Hotel 🛏️')
         
     with st.expander("About Today:"):
         st.subheader('For Womens')
-        st.write('Even rain can´t stop you. Come here. Visit Novus Hotel')
+        st.write('Even rain can´t stop you. Come here. Visit Novus Hotel 🛏️')
         st.subheader('For Mens')
-        st.write('Don´t let the rain stop you. Come here. Visit Novus Hotel')
+        st.write('Don´t let the rain stop you. Come here. Visit Novus Hotel 🛏️')
         
     with st.expander("About Tomorrow:"):
         st.subheader('For Womens')
-        st.write('Come to Novus Hotel and Sing with us tomorrow about fridays life')
+        st.write('Come to Novus Hotel 🛏️ and sing with us tomorrow about fridays life in our Karaoke Room')
         st.subheader('For Mens')
-        st.write('Save 30% reserving today your suit for tomorrow. Just do it')
+        st.write('Save 30% reserving today your suit for tomorrow. Just do it now. Reserve Novus Hotel 🛏️')
 
 
 with col9:
