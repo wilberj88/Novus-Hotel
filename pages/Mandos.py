@@ -36,11 +36,96 @@ colored_header(
 )
 
 st.header('Rooms')
+colored_header(
+    label="Operation",
+    description="Reservations, Ocupation & Cleaning",
+    color_name="violet-70",
+)
+
+colored_header(
+    label="Alarms",
+    description="Temporal, Climatological & Inflation warnings of danger",
+    color_name="red-70",
+)
+
+colored_header(
+    label="Recommendations",
+    description="Temporal, Climatological & Inflation suggestions",
+    color_name="blue-70",
+)
+
 
 st.header('Beds')
+colored_header(
+    label="Operation",
+    description="Reservations, Ocupation & Cleaning",
+    color_name="violet-70",
+)
 
+colored_header(
+    label="Alarms",
+    description="Temporal, Climatological & Inflation warnings of danger",
+    color_name="red-70",
+)
+
+colored_header(
+    label="Recommendations",
+    description="Temporal, Climatological & Inflation suggestions",
+    color_name="blue-70",
+)
 st.header('Staff')
+colored_header(
+    label="Operation",
+    description="Working, Resting & Payments",
+    color_name="violet-70",
+)
 
+colored_header(
+    label="Alarms",
+    description="Temporal, Climatological & Talent Market`s warnings of danger",
+    color_name="red-70",
+)
+
+colored_header(
+    label="Recommendations",
+    description="Temporal, Climatological & Business suggestions",
+    color_name="blue-70",
+)
 st.header('Expenditures')
+colored_header(
+    label="Operation",
+    description="Reservations, Ocupation & Cleaning",
+    color_name="violet-70",
+)
+
+colored_header(
+    label="Alarms",
+    description="Temporal, Climatological & Inflation warnings of danger",
+    color_name="red-70",
+)
+
+colored_header(
+    label="Recommendations",
+    description="Temporal, Climatological & Inflation suggestions",
+    color_name="blue-70",
+)
+
 
 st.header('Savings')
+colored_header(
+    label="Operation",
+    description="Reservations, Ocupation & Cleaning",
+    color_name="violet-70",
+)
+
+colored_header(
+    label="Alarms",
+    description="Temporal, Climatological & Inflation warnings of danger",
+    color_name="red-70",
+)
+
+colored_header(
+    label="Recommendations",
+    description="Temporal, Climatological & Inflation suggestions",
+    color_name="blue-70",
+)
