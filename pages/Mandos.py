@@ -158,6 +158,7 @@ with col6:
     col6.metric("Aliments", "21%", "13%")
     col6.metric("Raw Materials", "16%", "5%")
     col6.metric("Staff", "15%", "3%")
+    col6.metric("General", "17%", "3%")
     
 
 colored_header(
