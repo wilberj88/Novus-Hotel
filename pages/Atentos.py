@@ -9,6 +9,7 @@ from streamlit_echarts import st_echarts
 import pytrends
 from pytrends.request import TrendReq
 import requests
+import random
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="ATENTOS Novus Hotel", page_icon="🛏️")
