@@ -141,7 +141,7 @@ with col4:
     st.dataframe(df1.head(10))
 
 with col5:
-    st.write("🌧 Climate Monitoring Right Now")
+    st.write("🌧 Climate Right Now")
     st.write(f"{sity1:-^30}")
     st.write(f"Temperature (Kelvins): {temperature1}")
     st.write(f"Humidity: {humidity1}")
