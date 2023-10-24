@@ -222,7 +222,7 @@ with col7:
                 "center": ["50%", "25%"],
                 "emphasis": {"focus": "data"},
                 "label": {"formatter": "{b}: {@2012} ({d}%)"},
-                "encode": {"itemName": "product", "value": "Lunes", "tooltip": "Lunes"},
+                "encode": {"itemName": "product", "value": "Monday", "tooltip": "Monday"},
             },
         ],
     }
