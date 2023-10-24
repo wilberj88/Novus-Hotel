@@ -165,8 +165,19 @@ with col6:
     col6.metric("General", "17%", "3%")
     
 
+
 colored_header(
     label="Recommendations",
-    description="Adds, Pitch & Price suggestions",
+    description="Adds, Speech & Price suggestions",
     color_name="blue-70",
 )
+col7, col8, col9 = st.columns(3)
+
+with col7:
+    st.write('📢 Where to Advertise')
+    
+with col8:
+    st.write('🌹 Speech to Persuade')
+
+with col9:
+     st.write('💰 Price Suggestions')
