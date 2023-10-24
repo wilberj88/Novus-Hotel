@@ -96,22 +96,41 @@ colored_header(
 #ALARMS CONFIGURATION
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 API_KEY = "146090ad17fa8843bc9eca97c53926b4"
-sity = "New York"
-URL1 = BASE_URL + "q=" + sity + "&appid=" + API_KEY
-response = requests.get(URL1)
-if response.status_code == 200:
+sity1 = "New York"
+sity2 = "Colchester"
+URL1 = BASE_URL + "q=" + sity1 + "&appid=" + API_KEY
+URL2 = BASE_URL + "q=" + sity2 + "&appid=" + API_KEY
+response1 = requests.get(URL1)
+response2 = requests.get(URL2)
+
+if response1.status_code == 200:
    # getting data in the json format
-   data = response.json()
+   data1 = response.json()
    # getting the main dict block
-   main = data['main']
+   main1 = data1['main']
   # getting temperature
-   temperature = main['temp']
+   temperature1 = main1['temp']
    # getting the humidity
-   humidity = main['humidity']
+   humidity1 = main1['humidity']
    # getting the pressure
-   pressure = main['pressure']
+   pressure1 = main1['pressure']
    # weather report
-   report = data['weather']
+   report1 = data1['weather']
+
+if response2.status_code == 200:
+   # getting data in the json format
+   data2 = response.json()
+   # getting the main dict block
+   main2 = data2['main']
+  # getting temperature
+   temperature2 = main2['temp']
+   # getting the humidity
+   humidity2 = main2['humidity']
+   # getting the pressure
+   pressure2 = main2['pressure']
+   # weather report
+   report2 = data2['weather']
+
 pytrends = TrendReq(hl='en-US', tz=360)
 col4, col5, col6 = st.columns(3)
 
@@ -122,14 +141,19 @@ with col4:
     st.dataframe(df1.head(10))
 
 with col5:
-    st.write(f"{sity:-^30}")
-    st.write(f"Temperature (Kelvins): {temperature}")
-    st.write(f"Humidity: {humidity}")
-    st.write(f"Pressure: {pressure}")
-    st.write(f"Weather Report: {report[0]['description']}")
-
+    st.write(f"{sity1:-^30}")
+    st.write(f"Temperature (Kelvins): {temperature1}")
+    st.write(f"Humidity: {humidity1}")
+    st.write(f"Pressure: {pressure1}")
+    st.write(f"Weather Report: {report1[0]['description']}")
+    st.write(f"{sity2:-^30}")
+    st.write(f"Temperature (Kelvins): {temperature2}")
+    st.write(f"Humidity: {humidity2}")
+    st.write(f"Pressure: {pressure2}")
+    st.write(f"Weather Report: {report2[0]['description']}")
+    
 with col6:
-     metric("Sentimiento", "86%", "4%")
+     col6.metric("Sentimiento", "86%", "4%")
 
 colored_header(
     label="Recommendations",
