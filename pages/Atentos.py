@@ -57,9 +57,4 @@ if prompt := st.chat_input("👋I am your Butler today, please how can I help yo
         
 st.write('---')
 
-stage = st.selectbox("Choose the Stage of UX of 👤Clients👥 & 🤖Butlers🎩:",
-        ("New Sales", "Confirmations", "Welcomings", "Support"),
-    )
-
-
 
