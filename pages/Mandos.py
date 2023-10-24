@@ -6,6 +6,8 @@ import folium
 from streamlit_folium import st_folium
 import time
 from streamlit_echarts import st_echarts
+import pytrends
+from pytrends.request import TrendReq
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="MANDOS Novus Hotel", page_icon="🛏️")
@@ -89,6 +91,12 @@ colored_header(
     description="Temporal, Climatological & Inflation warnings of danger",
     color_name="red-70",
 )
+
+pytrends = TrendReq(hl='en-US', tz=360)
+st.write("World Trending Search in last hour 🇺🇸")
+# Google Trends data
+df1 = pytrends.trending_searches(pn='united_states')
+st.dataframe(df1.head(20))
 
 colored_header(
     label="Recommendations",
