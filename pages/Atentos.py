@@ -19,3 +19,12 @@ st.write("In real time monitoring at: ", current_time)
 
 st.write('---')
 
+st.header('🤖🤵🏻Virtual Butlers🤵🏻‍♂️🤖')
+colored_header(
+    label="Funnels by cycles",
+    description="Plans, Tasks & Results",
+    color_name="violet-70",
+)
+topic = st.selectbox("Choose the Stage of UX of 👤Clients👥 & 🤖Butlers🎩:",
+        ("New Sales", "Confirmations", "Welcomings", "Support"),
+    )
