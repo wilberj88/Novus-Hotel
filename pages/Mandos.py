@@ -141,7 +141,7 @@ with col4:
     st.dataframe(df1.head(10))
 
 with col5:
-    st.write("🌧Climate Monitoring Right Now")
+    st.write("🌧 Climate Monitoring Right Now")
     st.write(f"{sity1:-^30}")
     st.write(f"Temperature (Kelvins): {temperature1}")
     st.write(f"Humidity: {humidity1}")
@@ -154,7 +154,7 @@ with col5:
     st.write(f"Weather Report: {report2[0]['description']}")
     
 with col6:
-    st.write('💲Proyected Inflation in 12 months')
+    st.write('💲 Proyected Inflation in 12 months')
     col6.metric("Aliments", "21%", "13%")
     col6.metric("Raw Materials", "16%", "5%")
     col6.metric("Staff", "15%", "3%")
