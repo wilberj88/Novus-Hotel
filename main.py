@@ -1,5 +1,5 @@
 import streamlit as st
-
+from streamlit_extras.let_it_rain import rain 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Hotel", page_icon="🛏️")
@@ -84,6 +84,12 @@ with col4:
 h = st.button('Crear Novus Hotel 🛏️ YA')
 
 if h:
+    rain(
+        emoji="🎈",
+        font_size=54,
+        falling_speed=5,
+        animation_length="infinite",
+    )
     st.write('¡Novus Hotel en construcción! Accede a los MANDOS y ATENTOS de tu <<', name, '>> con el código de confirmación enviado a <<', email, '>>')
 
 
