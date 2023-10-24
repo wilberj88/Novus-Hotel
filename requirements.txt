@@ -9,7 +9,7 @@ plotly.express
 scikit-learn
 shap
 streamlit_echarts
-streamlit_card
+streamlit-card
 streamlit_extras
 streamlit_folium
 
