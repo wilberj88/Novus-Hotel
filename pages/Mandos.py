@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_timeline import st_timeline
 from streamlit_card import card
 from streamlit_extras.grid import grid
 from streamlit_extras.colored_header import colored_header
