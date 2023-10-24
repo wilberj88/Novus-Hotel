@@ -231,16 +231,35 @@ with col7:
 with col8:
     st.write('🌹 Speech to Persuade NOW')
     with st.expander("About Yesterday:"):
+        st.subheader('For Womens')
+        st.write('You miss the sun of yesterday as you miss your exboyfriend')
+        st.subheader('For Mens')
+        st.write('You miss the sun of yesterday as you miss your exgirlfriend')
+        
+    with st.expander("About Today:"):
+        st.subheader('For Womens')
+        st.write('Even rain can´t stop you. Come here. Visit Novus Hotel')
+        st.subheader('For Mens')
+        st.write('Don´t let the rain stop you. Come here. Visit Novus Hotel')
+        
+    with st.expander("About Tomorrow:"):
+        st.subheader('For Womens')
+        st.write('Come to Novus Hotel and Sing with us tomorrow about fridays life')
+        st.subheader('For Mens')
+        st.write('Save 30% reserving today your suit for tomorrow. Just do it')
+
+
+with col9:
+    st.write('💰 Price Suggestions')
+    with st.expander("TODAY:"):
         st.subheader('Fuentes de los datos')
         st.write('Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.')
         st.write('Ubicación: Latitudes y Longitudes de Google Maps')     
-    with st.expander("About Today:"):
+    with st.expander("TOMORROW:"):
         st.subheader('Fuentes de los datos')
         st.write('Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.')
         st.write('Ubicación: Latitudes y Longitudes de Google Maps')
-    with st.expander("About Tomorrow:"):
+    with st.expander("NEXT WEEK:"):
         st.subheader('Fuentes de los datos')
         st.write('Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.')
         st.write('Ubicación: Latitudes y Longitudes de Google Maps')
-with col9:
-     st.write('💰 Price Suggestions')
