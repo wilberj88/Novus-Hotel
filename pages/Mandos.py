@@ -154,7 +154,7 @@ with col5:
     st.write(f"Weather Report: {report2[0]['description']}")
     
 with col6:
-    st.write('Proyected Inflation in 12 months')
+    st.write('💲Proyected Inflation in 12 months')
     col6.metric("Aliments", "21%", "13%")
     col6.metric("Raw Materials", "16%", "5%")
     col6.metric("Staff", "15%", "3%")
