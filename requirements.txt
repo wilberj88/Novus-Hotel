@@ -12,4 +12,4 @@ streamlit_echarts
 streamlit-card
 streamlit_extras
 streamlit_folium
-
+pytrends
