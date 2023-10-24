@@ -105,7 +105,7 @@ response2 = requests.get(URL2)
 
 if response1.status_code == 200:
    # getting data in the json format
-   data1 = response.json()
+   data1 = response1.json()
    # getting the main dict block
    main1 = data1['main']
   # getting temperature
@@ -119,7 +119,7 @@ if response1.status_code == 200:
 
 if response2.status_code == 200:
    # getting data in the json format
-   data2 = response.json()
+   data2 = response2.json()
    # getting the main dict block
    main2 = data2['main']
   # getting temperature
