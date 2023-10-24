@@ -17,14 +17,7 @@ st.subheader(':blue[New Sales, Confirmation, Welcoming & Support Clients]👤')
 current_time = time.ctime()
 st.write("In real time monitoring at: ", current_time)
 
-st.write('---')
 
-st.header('🤖🤵🏻Virtual Butlers🤵🏻‍♂️🤖')
-colored_header(
-    label="Texts, Audios & Funnels by cycles",
-    description="Plans, Tasks & Results",
-    color_name="violet-70",
-)
 stage = st.selectbox("Choose the Stage of UX of 👤Clients👥 & 🤖Butlers🎩:",
         ("New Sales", "Confirmations", "Welcomings", "Support"),
     )
@@ -66,3 +59,11 @@ if stage:
         # Add assistant response to chat history
         st.session_state.messages.append({"role": "assistant", "content": full_response})
         
+st.write('---')
+
+st.header('🤖🤵🏻Virtual Butlers🤵🏻‍♂️🤖')
+colored_header(
+    label="Texts, Audios & Funnels by cycles",
+    description="Plans, Tasks & Results",
+    color_name="violet-70",
+)
