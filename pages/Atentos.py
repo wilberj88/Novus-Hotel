@@ -14,7 +14,7 @@ import random
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="ATENTOS Novus Hotel", page_icon="🛏️")
 st.title('ATENTOS 🛏️ Novus Hotel')
-st.subheader(':blue[New Sales, Confirmation, Welcoming & Support Clients]👤')
+
 current_time = time.ctime()
 st.write("In real time monitoring at: ", current_time)
 
@@ -61,6 +61,7 @@ if stage:
         st.session_state.messages.append({"role": "assistant", "content": full_response})
         
 st.write('---')
+st.subheader(':blue[New Sales, Confirmation, Welcoming & Support Clients]👤')
 
 st.header('🤖🤵🏻Virtual Butlers🤵🏻‍♂️🤖')
 colored_header(
