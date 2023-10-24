@@ -229,7 +229,18 @@ with col7:
     st_echarts(option, height="500px", key="echarts")
     
 with col8:
-    st.write('🌹 Speech to Persuade')
-
+    st.write('🌹 Speech to Persuade NOW')
+    with st.expander("About Yesterday:"):
+        st.subheader('Fuentes de los datos')
+        st.write('Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.')
+        st.write('Ubicación: Latitudes y Longitudes de Google Maps')     
+    with st.expander("About Today:"):
+        st.subheader('Fuentes de los datos')
+        st.write('Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.')
+        st.write('Ubicación: Latitudes y Longitudes de Google Maps')
+    with st.expander("About Tomorrow:"):
+        st.subheader('Fuentes de los datos')
+        st.write('Votos y abstención: Formularios E-14 de la Registraduría General de la Nación.')
+        st.write('Ubicación: Latitudes y Longitudes de Google Maps')
 with col9:
      st.write('💰 Price Suggestions')
