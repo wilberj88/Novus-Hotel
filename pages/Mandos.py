@@ -34,6 +34,8 @@ colored_header(
     color_name="blue-70",
 )
 
+
+st.write('---')
 st.header('Rooms')
 colored_header(
     label="Operation",
@@ -54,6 +56,7 @@ colored_header(
 )
 
 
+st.write('---')
 st.header('Beds')
 colored_header(
     label="Operation",
@@ -72,6 +75,9 @@ colored_header(
     description="Temporal, Climatological & Inflation suggestions",
     color_name="blue-70",
 )
+
+
+st.write('---')
 st.header('Staff')
 colored_header(
     label="Operation",
@@ -90,6 +96,9 @@ colored_header(
     description="Temporal, Climatological & Business suggestions",
     color_name="blue-70",
 )
+
+
+st.write('---')
 st.header('Expenditures')
 colored_header(
     label="Operation",
@@ -109,7 +118,7 @@ colored_header(
     color_name="blue-70",
 )
 
-
+st.write('---')
 st.header('Savings')
 colored_header(
     label="Operation",
@@ -128,3 +137,6 @@ colored_header(
     description="Temporal, Climatological & Inflation suggestions",
     color_name="blue-70",
 )
+
+st.write('---')
+st.header('Rentability')
