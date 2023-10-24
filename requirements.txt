@@ -12,4 +12,4 @@ streamlit_echarts
 streamlit_card
 streamlit_extras
 streamlit_folium
-streamlit_timeline
+
