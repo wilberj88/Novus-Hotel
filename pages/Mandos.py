@@ -93,10 +93,10 @@ colored_header(
 )
 
 pytrends = TrendReq(hl='en-US', tz=360)
-st.write("World Trending Search in last hour 🇺🇸")
+st.write("🇺🇸 Top10 Trending Search in last hour")
 # Google Trends data
 df1 = pytrends.trending_searches(pn='united_states')
-st.dataframe(df1.head(20))
+st.dataframe(df1.head(10))
 
 colored_header(
     label="Recommendations",
