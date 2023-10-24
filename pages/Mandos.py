@@ -18,12 +18,16 @@ current_time = time.ctime()
 st.write("In real time monitoring at: ", current_time)
 
 
-st.header('Suits')
+st.header('Operation')
 colored_header(
-    label="Operation",
-    description="Reservations, Ocupation & Cleaning",
+    label="Key Performance Indicators",
+    description="Plans, Tasks & Results",
     color_name="violet-70",
 )
+topic = st.selectbox("Choose Topic to Monitor:",
+        ("Suits", "Rooms", "Beds", "Staff", "Expenditures", "Savings", "Profits"),
+    )
+
 col1, col2, col3 = st.columns(3)
 with col1:
   acelerometro1 = {
