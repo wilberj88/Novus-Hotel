@@ -21,6 +21,68 @@ colored_header(
     description="Reservations, Ocupation & Cleaning",
     color_name="violet-70",
 )
+col1, col2, col3 = st.columns(3)
+with col1:
+  acelerometro1 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 85, "name": "Reservations"}],
+            }
+        ],
+    }
+
+  st_echarts(options=acelerometro1)
+
+with col2:
+  acelerometro2 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 70, "name": "Ocupation"}],
+            }
+        ],
+    }
+
+  st_echarts(options=acelerometro2)
+
+with col3:
+  acelerometro3 = {
+        "tooltip": {"formatter": "{a} <br/>{b} : {c}%"},
+        "series": [
+            {
+                "name": "Pressure",
+                "type": "gauge",
+                "axisLine": {
+                    "lineStyle": {
+                        "width": 10,
+                    },
+                },
+                "progress": {"show": "true", "width": 10},
+                "detail": {"valueAnimation": "true", "formatter": "{value}"},
+                "data": [{"value": 100, "name": "Cleaning"}],
+            }
+        ],
+    }
+  st_echarts(options=acelerometro3)
 
 colored_header(
     label="Alarms",
