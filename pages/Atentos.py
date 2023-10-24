@@ -14,6 +14,7 @@ import random
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="ATENTOS Novus Hotel", page_icon="🛏️")
 st.title('ATENTOS 🛏️ Novus Hotel')
+st.header('🤖🤵🏻Virtual Butlers🤵🏻‍♂️🤖')
 
 current_time = time.ctime()
 st.write("In real time operation at: ", current_time)
@@ -62,11 +63,3 @@ stage = st.selectbox("Choose the Stage of UX of 👤Clients👥 & 🤖Butlers�
 
 
 
-st.subheader(':blue[New Sales, Confirmation, Welcoming & Support Clients]👤')
-
-st.header('🤖🤵🏻Virtual Butlers🤵🏻‍♂️🤖')
-colored_header(
-    label="Texts, Audios & Funnels by cycles",
-    description="Plans, Tasks & Results",
-    color_name="violet-70",
-)
