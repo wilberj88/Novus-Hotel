@@ -40,9 +40,9 @@ if prompt := st.chat_input("👋I am your Butler today, please how can I help yo
         full_response = ""
         assistant_response = random.choice(
             [
-                "Su consulta está ahora en las mejores manos, en breve enviamos reporte de consulta jurídica",
-                "Claro que sí, cuente con mi apoyo jurídico en todo su proceso judicial",
-                "Por supuesto que sí, estoy para defender todos tus derechos, cuentas conmigo",
+                "The confirmation code has sent you to your email. Check, type and open your door",
+                "Your Reservation Starts Tomorrow. Please confirmn here:",
+                "Welcome to Tarragona Novus Hotel 🛏️, what kind of room do you want?",
             ]
         )
         # Simulate stream of response with milliseconds delay
@@ -54,7 +54,6 @@ if prompt := st.chat_input("👋I am your Butler today, please how can I help yo
         message_placeholder.markdown(full_response)
     # Add assistant response to chat history
     st.session_state.messages.append({"role": "assistant", "content": full_response})
-        
-st.write('---')
+
 
 
