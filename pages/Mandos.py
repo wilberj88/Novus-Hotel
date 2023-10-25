@@ -101,7 +101,7 @@ colored_header(
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 API_KEY = "146090ad17fa8843bc9eca97c53926b4"
 sity1 = "New York"
-sity2 = "Miami"
+sity2 = "Amsterdam"
 URL1 = BASE_URL + "q=" + sity1 + "&appid=" + API_KEY
 URL2 = BASE_URL + "q=" + sity2 + "&appid=" + API_KEY
 response1 = requests.get(URL1)
