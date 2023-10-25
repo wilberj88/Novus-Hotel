@@ -92,7 +92,7 @@ with col3:
   st_echarts(options=acelerometro3)
 
 colored_header(
-    label="Alarms",
+    label="Commercial Insights",
     description="Temporal, Climatological & Inflation warnings of danger",
     color_name="red-70",
 )
