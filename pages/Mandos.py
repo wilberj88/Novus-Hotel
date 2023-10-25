@@ -167,7 +167,7 @@ with col6:
 
 
 colored_header(
-    label="Recommendations",
+    label="Sales Recommendations",
     description="Adds, Speech & Price suggestions",
     color_name="blue-70",
 )
